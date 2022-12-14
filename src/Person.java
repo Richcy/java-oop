@@ -6,50 +6,20 @@ public class Person {
     public String address;
     public int age;
 
+    // list of method getter and setter
     public void sayHello(){
-        System.out.println("Hai namaku "+ name +", aku tinggal di "+address+".");
-        System.out.println("Umurku "+ age +" tahun.");
+        System.out.println("Hello, My name is "+ name +", and I live at "+ address);
+        System.out.println("I am a "+ age+" years old");
     }
 
-    //list of method getter and setter
-
-    public Integer getId() {
-        return id;
+    public Person() {
     }
 
-    public void setId(Integer id) {
+    public Person(Integer id, String name, String gender, String address, int age) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
         this.address = address;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
         this.age = age;
     }
 }
