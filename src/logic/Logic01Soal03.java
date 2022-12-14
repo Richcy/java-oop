@@ -5,6 +5,11 @@ public class Logic01Soal03 extends BasicLogic{
         super(n);
     }
     public void isiArray(){
+        int angka = 0;
+        for (int i = 0; i < this.n; i++) {
+            this.array[0][i] = String.valueOf(angka);
+            angka+=2;
+        }
 
     }
     public void cetakArray(){

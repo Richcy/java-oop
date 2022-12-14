@@ -4,10 +4,12 @@ public class BasicLogic {
 
     public int n;
     public String[][] array;
+    public int[][] array1;
 
     public BasicLogic(int n){
         this.n = n;
         this.array = new String[n][n];
+        this.array1 = new int[n][n];
     }
 
     public void print(){
@@ -32,4 +34,10 @@ public class BasicLogic {
             }
         }
     }
+    public void printSingleInt(){
+        for (int i = 0; i < n; i++) {
+            System.out.print(this.array1[0][i]+"\t");
+        }
+    }
 }
+
